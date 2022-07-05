@@ -1,0 +1,6 @@
+First: copy the esp32 library's URL
+Second: open Arduino ide from file --> preferences paste the URL in the "Additional Boards Manager URLs"
+Third: from tools --> Boards --> Boards manager --> search the board name which is esp32 then install it
+Fourth: from tools --> Boards --> choose the esp32 board
+
+*you can test the board if it works or not by using a simple program such as the LED's blinking*
