@@ -6,14 +6,14 @@ var country = document.getElementById("country");
 var countryLang = document.getElementById("countryLang");
 var confd = document.getElementById("confd");
 
-// now lets use web speech api
+// Using web API for Speechrecognithion
 var speechRecognition = speechRecognition || webkitSpeechRecognition;
 var recognizer = new speechRecognition();
 
+// We are making it recognizing the speech and display it directly
 recognizer.interimResults = true;
-// new get languages from array supported by api
-// first copy array from a website
 
+//Languages list
 var langList = [['Arabic', ['ar-SA', 'Saudi Arabia'],['ar-EG', 'Egypt']],
 ['Afrikaans',       ['af-ZA']],
 ['አማርኛ',           ['am-ET']],
@@ -117,7 +117,7 @@ var langList = [['Arabic', ['ar-SA', 'Saudi Arabia'],['ar-EG', 'Egypt']],
 ['हिन्दी',             ['hi-IN']],
 ['ภาษาไทย',         ['th-TH']]];
 
-// first select a default language on page load
+// Default language on page load
 recognizer.lang = "ar-SA";
 // now create a list of language to select on page
 for(var i=0; i<langList.length; i++){
@@ -146,7 +146,7 @@ countryLang.onchange = function() {
   // it will get the value and assign to the "recognizer.lang" on selecting
   recognizer.lang = countryLang.value;
 }
-// now set controls
+// Events
 start.onclick = function() {
   recognizer.start();
 }
