@@ -1,0 +1,50 @@
+.{
+  margin: 0px;
+  padding: 0px;
+  box-sizing:border-box;
+}
+
+#start{
+  width: 9.8%;
+  height: 5vh;
+
+  position: relative;
+  border-radius:15px;
+
+}
+#stop{
+  width: 9.8%;
+  height: 5vh;
+
+  position: relative;
+  border-radius:15px;
+}
+#cancel{
+  width: 9.8%;
+  height: 5vh;
+
+  position: relative;
+  border-radius:15px;
+}
+#country{
+  width: 9.8%;
+  height: 5vh;
+
+  position: relative;
+  border-radius:15px;
+}
+#countryLang{
+  width: 9.8%;
+  height: 5vh;
+
+  position: relative;
+  border-radius:15px;
+}
+
+#output{
+  width: 50%;
+  height: 40vh;
+  background-color: rgb(239,239,239);
+  position:relative;
+  border-radius: 15px;
+}
